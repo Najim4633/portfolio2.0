@@ -19,114 +19,7 @@ export function Hero() {
     <section id="home" className="min-h-screen relative overflow-hidden flex items-center justify-center">
       
       {/* REAL Background - Automatic Formless.xyz Style */}
-      <div className="absolute inset-0 bg-black">
-        {/* Base gradient background */}
-        <motion.div
-          className="absolute inset-0"
-          animate={{
-            background: [
-              'radial-gradient(circle at 20% 50%, rgba(139,92,246,0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(59,130,246,0.3) 0%, transparent 50%), radial-gradient(circle at 40% 80%, rgba(16,185,129,0.3) 0%, transparent 50%)',
-              'radial-gradient(circle at 60% 20%, rgba(59,130,246,0.4) 0%, transparent 50%), radial-gradient(circle at 20% 80%, rgba(139,92,246,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 60%, rgba(16,185,129,0.3) 0%, transparent 50%)',
-              'radial-gradient(circle at 80% 80%, rgba(16,185,129,0.4) 0%, transparent 50%), radial-gradient(circle at 40% 20%, rgba(139,92,246,0.3) 0%, transparent 50%), radial-gradient(circle at 20% 40%, rgba(59,130,246,0.3) 0%, transparent 50%)'
-            ]
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-
-        {/* Floating Geometric Shapes - Auto Animation */}
-        {[...Array(8)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute"
-            style={{
-              left: `${10 + (i * 12)}%`,
-              top: `${20 + (i % 3) * 25}%`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              rotate: [0, 180, 360],
-              scale: [1, 1.2, 1],
-              opacity: [0.3, 0.7, 0.3]
-            }}
-            transition={{
-              duration: 8 + i * 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: i * 0.5
-            }}
-          >
-            {i % 3 === 0 ? (
-              // Triangle
-              <svg width="40" height="40" className="text-blue-400/20">
-                <polygon points="20,5 35,30 5,30" fill="currentColor" stroke="rgba(59,130,246,0.3)" strokeWidth="1"/>
-              </svg>
-            ) : i % 3 === 1 ? (
-              // Hexagon
-              <svg width="40" height="40" className="text-purple-400/20">
-                <polygon points="20,2 32,8 32,22 20,28 8,22 8,8" fill="currentColor" stroke="rgba(139,92,246,0.3)" strokeWidth="1"/>
-              </svg>
-            ) : (
-              // Circle
-              <div className="w-8 h-8 rounded-full bg-emerald-400/10 border border-emerald-400/30" />
-            )}
-          </motion.div>
-        ))}
-
-        {/* Light Beams - Automatic */}
-        <motion.div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-        >
-          {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
-            <motion.div
-              key={i}
-              className="absolute top-0 left-0 origin-bottom"
-              style={{
-                rotate: `${angle}deg`,
-                height: '200px',
-                width: '2px',
-                background: `linear-gradient(to top, hsl(${i * 45}, 70%, 60%), transparent)`,
-                filter: 'blur(1px)',
-              }}
-              animate={{
-                opacity: [0.2, 0.8, 0.2],
-                scale: [1, 1.5, 1]
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                delay: i * 0.2
-              }}
-            />
-          ))}
-        </motion.div>
-
-        {/* Particle dots */}
-        {[...Array(15)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-white/40 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              opacity: [0.2, 1, 0.2],
-              scale: [1, 2, 1]
-            }}
-            transition={{
-              duration: 4 + Math.random() * 3,
-              repeat: Infinity,
-              delay: Math.random() * 5
-            }}
-          />
-        ))}
-      </div>
+     
 
       {/* CONTENT - Following Your Exact Hierarchy */}
       <div className="mt-17 mb-30 relative z-10 max-w-5xl mx-auto px-6 text-center">
@@ -153,23 +46,25 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="space-y-4 mb-6"
         >
-          <h3 className="text-2xl md:text-4xl lg:text-4xl font-black leading-tight">
+          <h3 className="text-2xl md:text-4xl lg:text-4xl font-bold leading-tight">
             Hi, my name is </h3>
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-black leading-tight">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
             <span className="block text-white">Najim  Tamboli</span>
             
           </h1>
         </motion.div>
 
         {/* 2. ROLE/TITLE - Medium (2xl to 4xl, light/medium) */}
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="block text-[2rem] md:text-[2rem] lg:text-[2.5rem] font-light text-white-200 mb-8"
-        >
-          Java Developer & Backend Engineer
-        </motion.h2>
+<motion.h2
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.5 }}
+  className="block text-[2rem] md:text-[2rem] lg:text-[2.5rem]  font-bold 
+             bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-8"
+>
+  Java Developer & Backend Engineer
+</motion.h2>
+
 
         {/* 3. DESCRIPTION - Smaller (xl to 2xl, regular, max-w-3xl) */}
         <motion.p

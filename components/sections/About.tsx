@@ -117,7 +117,7 @@ export function About() {
         >
           <motion.h2 
             variants={itemVariants}
-            className="text-5xl md:text-6xl font-bold text-white mb-6"
+            className="text-5xl md:text-6xl font-bold  text-white mb-6"
           >
             About{' '}
             <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
