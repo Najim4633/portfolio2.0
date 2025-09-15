@@ -129,7 +129,7 @@ export function Hero() {
       </div>
 
       {/* CONTENT - Following Your Exact Hierarchy */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div className="mt-17 mb-30 relative z-10 max-w-5xl mx-auto px-6 text-center">
 
         {/* Status Badge */}
         <motion.div
@@ -139,7 +139,7 @@ export function Hero() {
           className="inline-flex items-center gap-3 px-6 py-3 mb-8 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-sm font-medium"
         >
           <motion.div 
-            className="w-3 h-3 bg-emerald-400 rounded-full"
+            className=" w-3 h-3 bg-emerald-400 rounded-full"
             animate={{ scale: [1, 1.3, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           />
@@ -177,7 +177,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-300 mb-8"
+          className="block text-2xl  md:text-3xl lg:text-6xl font-light text-gray-200 mb-8"
         >
           Java Developer & Backend Engineer
         </motion.h2>
@@ -187,7 +187,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12"
+          className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-12"
         >
           Building robust backend solutions with Java, Spring Boot, and modern technologies. 
           Passionate about creating scalable systems and solving complex problems.
@@ -200,7 +200,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto mb-12"
         >
-          {['Java', 'Spring Boot', 'Python', 'MySQL', 'React', 'Git'].map((tech, index) => (
+          {[`Java`, 'Spring Boot', 'Python', 'MySQL', 'React', 'Git'].map((tech, index) => (
             <motion.span
               key={tech}
               initial={{ opacity: 0, scale: 0.8 }}
@@ -272,7 +272,7 @@ export function Hero() {
         >
           {[
             { icon: Github, href: "https://github.com/Najim4633", color: 'hover:text-white hover:bg-gray-700' },
-            { icon: Linkedin, href: "https://linkedin.com/in/najim-tamboli", color: 'hover:text-blue-400 hover:bg-blue-400/10' },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/najim-tamboli-06b10026a/", color: 'hover:text-blue-400 hover:bg-blue-400/10' },
             { icon: Mail, href: "mailto:najimtamboli671@gmail.com", color: 'hover:text-emerald-400 hover:bg-emerald-400/10' }
           ].map((social, index) => (
             <motion.a

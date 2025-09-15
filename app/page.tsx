@@ -13,10 +13,11 @@ export default function HomePage() {
        <Header />
       <main>
         <Hero />
-        <About />
+        
         <Skills />
         <Projects />
         <Contact />
+        <About />
         </main>
         <Footer />
        

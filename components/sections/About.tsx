@@ -116,7 +116,7 @@ export function About() {
             className="text-5xl md:text-6xl font-bold text-white mb-6"
           >
             About{' '}
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
               Me
             </span>
           </motion.h2>
