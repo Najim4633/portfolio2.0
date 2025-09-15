@@ -3,15 +3,15 @@ import { Github, Linkedin, Mail,  Heart } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
-  
+  //bg-gray-900/50 border-t
   return (
-    <footer className="bg-gray-900/50 border-t border-gray-800 py-12">
+    <footer className=" border-gray-800 py-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h3 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-green-600 bg-clip-text text-transparent">
               Najim Tamboli
             </h3>
             <p className="text-gray-400 text-sm">

@@ -28,7 +28,7 @@ export function Projects() {
   ]
 
   return (
-    <section id ="projects" className="py-32 bg-black text-white relative overflow-hidden">
+    <section id ="projects" className="py-32 relative overflow-hidden">
       
       {/* Subtle geometric background */}
       <div className="absolute inset-0">

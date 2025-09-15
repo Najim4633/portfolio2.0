@@ -34,13 +34,13 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-black">
+    <section id="contact" className="py-24">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Let&apos;s <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Connect</span>
+            Let&apos;s <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Connect</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Ready to bring your ideas to life? Let&apos;s discuss your next project
@@ -192,7 +192,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:from-gray-600 disabled:to-gray-600 text-white rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 disabled:cursor-not-allowed"
+                  className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-700 disabled:from-gray-600 disabled:to-gray-600 text-white rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
@@ -239,7 +239,7 @@ export function Contact() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="mailto:najimtamboli671@gmail.com"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-700 text-white rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               <Mail className="w-5 h-5" />
               Email Me Directly

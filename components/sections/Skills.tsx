@@ -65,13 +65,13 @@ export function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-24 bg-black">
+    <section id="skills" className="py-24 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Skills & <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Technologies</span>
+            Skills & <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Technologies</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Technologies and tools I use to build robust applications
@@ -103,10 +103,10 @@ export function Skills() {
                     </div>
                     <div className="w-full bg-gray-800 rounded-full h-2">
                       <div 
-                        className={`h-2 rounded-full bg-gradient-to-r ${category.color === 'text-blue-400' ? 'from-blue-500 to-blue-400' : 
-                          category.color === 'text-green-400' ? 'from-green-500 to-green-400' :
-                          category.color === 'text-purple-400' ? 'from-purple-500 to-purple-400' :
-                          'from-orange-500 to-orange-400'}`}
+                        className={`h-2 rounded-full bg-gradient-to-r ${category.color === 'text-blue-400' ? 'from-blue-700 to-blue-400' : 
+                          category.color === 'text-green-400' ? 'from-green-700 to-green-400' :
+                          category.color === 'text-purple-400' ? 'from-purple-700 to-purple-400' :
+                          'from-orange-700 to-orange-400'}`}
                         style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>
@@ -140,7 +140,7 @@ export function Skills() {
           </p>
           <a 
             href="#projects"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
             View My Projects
           </a>

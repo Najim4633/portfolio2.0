@@ -63,11 +63,11 @@ export function Header() {
           {/* Logo */}
           <motion.button 
             onClick={() => scrollToSection('home')}
-            className="text-xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent"
+            className="text-xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Najim Tamboli
+            Developer
           </motion.button>
 
           {/* Desktop Navigation */}
@@ -82,7 +82,7 @@ export function Header() {
                 className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 ${
                   activeSection === item.href
                     ? 'text-blue-400'
-                    : 'text-gray-300 hover:text-white'
+                    : 'text-gray-300 hover:text-green-400'
                 }`}
                 whileHover={{ scale: 1.05 }}
               >
@@ -90,7 +90,7 @@ export function Header() {
                 {activeSection === item.href && (
                   <motion.div
                     layoutId="activeNav"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 to-green-400 rounded-full"
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
                 )}

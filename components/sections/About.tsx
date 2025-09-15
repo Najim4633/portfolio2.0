@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Code, Coffee, Lightbulb, Target, GraduationCap } from 'lucide-react'
+import { Code, Coffee, Lightbulb, Target, GraduationCap, University } from 'lucide-react'
 
 export function About() {
   const [ref, inView] = useInView({
@@ -64,13 +64,15 @@ export function About() {
     {
       degree: "Master of Computer Application",
       school: "MES's Institute, Pune",
+      University: "Savitribai Phule Pune University",
       duration: "2023-2025",
       cgpa: "7.88/10",
       description: "Focus: Advanced Java, Spring Boot, System Design"
     },
     {
       degree: "Bachelor of Computer Application", 
-      school: "K. J. Somaiya College",
+      school: "K. J. Somaiya College, Kopargaon",
+      University: "Savitribai Phule Pune University",
       duration: "2020-2023",
       cgpa: "8.65/10",
       description: "Foundation: Programming, Database Systems, Web Development"
@@ -78,8 +80,10 @@ export function About() {
   ]
 
   return (
-    <section id="about" className="py-32 relative overflow-hidden">
-      
+   <section 
+  id="about" 
+  className="py-32 relative overflow-hidden "
+>
       {/* Background Elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -236,7 +240,7 @@ export function About() {
                   >
                     <div className="flex items-start gap-4">
                       <motion.div
-                        className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-400 to-purple-400 p-3 flex-shrink-0"
+                        className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-400 to-green-400 p-3 flex-shrink-0"
                         whileHover={{ rotate: 360 }}
                         transition={{ duration: 0.5 }}
                       >
@@ -245,6 +249,7 @@ export function About() {
                       <div className="flex-1">
                         <h5 className="font-semibold text-white text-lg">{edu.degree}</h5>
                         <p className="text-blue-400 font-medium">{edu.school}</p>
+                        <p className="text-gray-200 font-medium">{edu.University}</p>
                         <p className="text-gray-400 text-sm mb-2">{edu.duration} • CGPA: {edu.cgpa}</p>
                         <p className="text-gray-300 text-sm">{edu.description}</p>
                       </div>

@@ -153,22 +153,11 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="space-y-4 mb-6"
         >
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-tight">
-            <span className="block text-white">Najim</span>
-            <motion.span 
-              className="block bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent"
-              animate={{
-                backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
-              }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              style={{ backgroundSize: '200% 200%' }}
-            >
-              Tamboli
-            </motion.span>
+          <h3 className="text-2xl md:text-4xl lg:text-4xl font-black leading-tight">
+            Hi, my name is </h3>
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-black leading-tight">
+            <span className="block text-white">Najim  Tamboli</span>
+            
           </h1>
         </motion.div>
 
@@ -177,7 +166,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="block text-2xl  md:text-3xl lg:text-6xl font-light text-gray-200 mb-8"
+          className="block text-[2rem] md:text-[2rem] lg:text-[2.5rem] font-light text-white-200 mb-8"
         >
           Java Developer & Backend Engineer
         </motion.h2>
@@ -223,7 +212,7 @@ export function Hero() {
         >
           <motion.button
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold text-lg uppercase tracking-wide shadow-xl hover:shadow-2xl transition-all duration-300"
+            className="group inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-full font-semibold text-lg uppercase tracking-wide shadow-xl hover:shadow-2xl transition-all duration-300"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
