@@ -24,7 +24,7 @@ export function Skills() {
       borderColor: "border-green-400/20",
       skills: [
         { name: "Spring Boot", level: 85 },
-        { name: "Django", level: 80 },
+        { name: "Spring-Web", level: 80 },
         { name: "React", level: 75 },
         { name: "Flask", level: 70 }
       ]
@@ -51,7 +51,7 @@ export function Skills() {
       skills: [
         { name: "Git", level: 85 },
         { name: "VS Code", level: 90 },
-        { name: "IntelliJ IDEA", level: 85 },
+        { name: "Eclipse", level: 85 },
         { name: "Postman", level: 80 }
       ]
     }

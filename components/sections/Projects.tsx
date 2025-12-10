@@ -8,23 +8,23 @@ export function Projects() {
 
   const projects = [
     {
-      title: "Face Recognition System",
-      subtitle: "AI/ML • Real-time Processing",
-      description: "95% accuracy facial recognition system built with Python, OpenCV, and machine learning algorithms.",
-      tech: ["Python", "OpenCV", "SQLite", "JavaScript"]
+      title: "Online Job Portal",
+      subtitle: "Backend Development • Enterprise",
+      description: "Complete job portal with role-based access control and comprehensive application workflows.",
+      tech: ["Java", "Spring Boot", "MySQL", "REST APIs"]
     },
     {
       title: "eAuction Platform", 
       subtitle: "Web Development • Real-time",
       description: "Full-featured auction system with real-time bidding logic and complete lifecycle management.",
       tech: ["Django", "Python", "Bootstrap", "JavaScript"]
-    },
-    {
-      title: "Online Job Portal",
-      subtitle: "Backend Development • Enterprise",
-      description: "Complete job portal with role-based access control and comprehensive application workflows.",
-      tech: ["Java", "Spring Boot", "MySQL", "REST APIs"]
+    },    {
+      title: "Face Recognition System",
+      subtitle: "AI/ML • Real-time Processing",
+      description: "95% accuracy facial recognition system built with Python, OpenCV, and machine learning algorithms.",
+      tech: ["Python", "OpenCV", "SQLite", "JavaScript"]
     }
+
   ]
 
   return (
