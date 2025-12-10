@@ -1,6 +1,6 @@
 "use client"
 
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import { Header } from '@/components/sections/Header'
 import { Hero } from '@/components/sections/Hero'
 import { About } from '@/components/sections/About'
@@ -10,13 +10,13 @@ import { Contact } from '@/components/sections/Contact'
 import { Footer } from '@/components/sections/Footer'
 
 // Dynamic import with SSR disabled to prevent hydration mismatch
-const AnimatedBackground = dynamic(() => 
-  import('@/components/ui/AnimatedBackground').then(mod => ({ default: mod.AnimatedBackground })),
-  { 
-    ssr: false,
-    loading: () => <div className="fixed inset-0 bg-black z-0" /> // Fallback background
-  }
-)
+// const AnimatedBackground = dynamic(() => 
+//   import('@/components/ui/AnimatedBackground').then(mod => ({ default: mod.AnimatedBackground })),
+//   { 
+//     ssr: false,
+//     loading: () => <div className="fixed inset-0 bg-black z-0" /> // Fallback background
+//   }
+// )
 
 export default function HomePage() {
   return (
